@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 # Step 1: Select stocks and download data
 stocks = ["TCS.NS", "INFY.NS", "RELIANCE.NS"]
-data = yf.download(stocks, start="2022-01-01", end="2025-01-01")["Close"]
+data = yf.download(stocks, start="2020-01-01", end="2025-01-01")["Close"]
 
 # Step 2: Calculate daily returns
 daily_returns = data.pct_change().dropna()
